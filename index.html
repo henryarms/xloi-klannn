@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi,kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+    <title>Xin Loi Klannn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe7e7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            color: #333;
+        }   
+        h1{
+            color: #ff6f61;
+        }
+        p{
+            font-size: 1.2em;
+            margin: 20px;
+        }
+        button{
+            padding:10px 20px;
+            font-size: 1.2em;
+            background-color: #ff6f61;
+            color:white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #ff4040;
+        }
+        #heart{
+            font-size: 100px;
+            color: red;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        #apologyMessage {
+            display: none;
+            font-size: 1.5em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1> Anh Xin Loi maaaaaa!</h1>
+    <p> Hoi ma khong dam the nua roi 😞 </p>
+    <button onclick="showApology()"> Accpect hihi 🙏 </button>
+    <div id="heart">😍</div>   
+    <p id="apologyMessage"> Khong dam nhu the nua. The khong coa lan sau dau hihi
+        미안해 <3</p>
+    <script>
+        function showApology(){
+            document.getElementById("apologyMessage").style.display = "block";
+        }
+    </script>     
+</body>
+</html>    
